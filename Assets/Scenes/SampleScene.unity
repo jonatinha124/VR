@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 370461212}
   - component: {fileID: 370461211}
   - component: {fileID: 370461210}
+  - component: {fileID: 370461213}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -150,7 +151,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1.8
+  m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: -0.7, z: 0}
 --- !u!54 &370461211
@@ -167,7 +168,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!4 &370461212
 Transform:
@@ -184,6 +185,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370461213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370461209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d17ed2a61a58264c9d5c77412e8257c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 734967438}
+  speed: 10
 --- !u!1001 &565723933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -333,6 +348,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &734967438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8124575364206571605, guid: bcd63ddded8043c47ab03b1cd2045bf3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3393144962639993381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &873261822 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482300, guid: 60270cf52a5e94998a5a335989159738,
